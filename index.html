@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe with Bot</title>
+</head>
+<body>
+    <div class="container" id="welcomeContainer">
+        <h1>Welcome to Tic-Tac-Toe with Bot!</h1>
+        <p>Challenge the AI and enjoy a game of Tic-Tac-Toe.</p>
+        <p>Choose your symbol (X or O), start the game, and see if you can outsmart the bot!</p>
+        
+        <label for="playerChoice">Choose X or O:</label>
+        <select id="playerChoice">
+            <option value="X">X</option>
+            <option value="O">O</option>
+        </select>
+
+      <label for="difficultySelect">Choose Difficulty:</label>
+      <select id="difficultySelect">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+      </select>
+
+
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div class="container" id="gameContainer" style="display: none;">
+        <div id="messageArea"></div>
+        
+        <div class="board" id="board">
+        </div>
+
+        <button onclick="resetGame()">Reset Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
